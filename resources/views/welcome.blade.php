@@ -10,87 +10,113 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
 
-            .full-height {
-                height: 100vh;
-            }
+        <!-- Bootstrap Core CSS -->
+        <link href="{{ userAsset('plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ userAsset('plugins/mdb/css/mdb.min.css') }}" rel="stylesheet">
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+        <!-- You can change the theme colors from here -->
+        <link href="{{ userAsset('css/colors/default-dark.css') }}" rel="stylesheet">
 
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
+        <!-- Custom CSS -->
+        <link href="{{ userAsset('css/login-signup.css') }}" rel="stylesheet">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 left-side">
+                    <div>
+                        <a class="navbar-brand" href="/">Samuel Gilbert</a>
+                    </div>
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                    <div id="login-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#login-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#login-carousel" data-slide-to="1"></li>
+                            <li data-target="#login-carousel" data-slide-to="2"></li>
+                        </ol>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                        <div class="carousel-inner">
+                            <div class="carousel-item text-center active">
+                                <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
+                                <div class="carousel-caption position-static">
+                                    <h5 class="carousel-header">Send Your Proposals</h5>
+                                    <p class="carousel-description">
+                                        Plese replace this text with something more relevant to your project,
+                                        I”ve put something here so it could look nice & cool once you change it, that’s perfect
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
+                                <div class="carousel-caption position-static">
+                                    <h5 class="carousel-header">Send Your Proposals</h5>
+                                    <p class="carousel-description">
+                                        Plese replace this text with something more relevant to your project,
+                                        I”ve put something here so it could look nice & cool once you change it, that’s perfect
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item text-center">
+                                <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
+                                <div class="carousel-caption position-static">
+                                    <h5 class="carousel-header">Send Your Proposals</h5>
+                                    <p class="carousel-description">
+                                        Plese replace this text with something more relevant to your project,
+                                        I”ve put something here so it could look nice & cool once you change it, that’s perfect
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 right-side">
+                    <div class="btn-group-cont">
+                        <div class="btn-group login-btn-group float-right" role="group">
+                            <button type="button" class="btn btn-rounded">Sign up</button>
+                            <button type="button" class="btn btn-rounded blue-btn">Log in</button>
+                        </div>
+                    </div>
+                    <div class="auth-form-cont h-100 d-flex align-items-center text-center text-md-left">
+                        <form class="w-100 animated bounceInDown">
+
+                            <h4 class="mb-5 text-white">Sign in Today And Be Our Favoret</h4>
+
+                            <input type="email" id="email-login" class="form-control d-inline-block" placeholder="Your Email">
+
+                            <input type="password" id="password-login" class="form-control d-inline-block" placeholder="Your Password">
+                            <div>
+                                <button class="btn btn-rounded blue-btn" type="submit">Log in</button>
+                            </div>
+                        </form>
+
+                        <form class="w-100 animated hide-form bounceInDown">
+                            <h4 class="mb-5 text-white">Sign up today</h4>
+                            <input type="text" id="username" class="form-control d-inline-block" placeholder="Your Username">
+                            <input type="password" id="password-signup" class="form-control d-inline-block" placeholder="Your Password">
+                            <input type="password" id="repeat-password" class="form-control d-inline-block" placeholder="Repeat Your Password">
+                            <input type="email" id="email-signup" class="form-control d-inline-block" placeholder="Your Email">
+                            <div>
+                                <button class="btn btn-rounded blue-btn" type="submit">Log in</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+
+    <!-- All Jquery -->
+    <script src="{{ userAsset( 'plugins/jquery/jquery.min.js' )}}"></script>
+
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="{{ userAsset( 'plugins/popper/popper.min.js' )}}"></script>
+    <script src="{{ userAsset( 'plugins/bootstrap/js/bootstrap.min.js' )}}"></script>
+    <script src="{{ userAsset( 'plugins/mdb/js/mdb.min.js' )}}"></script>
+
+    <!-- Custom CSS -->
+    <script src="{{ userAsset( 'js/login-signup/login-signup.js' )}}"></script>
     </body>
 </html>
