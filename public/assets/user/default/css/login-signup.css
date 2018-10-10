@@ -123,6 +123,24 @@ button.blue-btn{
         margin-top: 150px;
     }
 }
+@media(min-width:1680px){
+    .top-content{
+        height: 100vh;
+    }
+    #login-carousel{
+        margin: 0;
+    }
+    .carousel-content{
+        margin:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .carousel-content .carousel-indicators{
+        bottom: -30px;
+    }
+}
 @media(min-width:1440px){
     #login-carousel{
         padding: 0 100px;
@@ -139,12 +157,9 @@ button.blue-btn{
     .auth-form-cont h4{
         font-size: 30px;
     }
+
 }
-@media(min-width:1680px){
-    #login-carousel{
-        margin-top:170px;
-    }
-}
+
 @media(min-width:991px){
     .auth-form-cont{
         padding: 0 0 0 85px;

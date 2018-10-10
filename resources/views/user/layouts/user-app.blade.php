@@ -19,6 +19,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ userAsset('plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ userAsset('plugins/mdb/css/mdb.min.css') }}" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="{{ userAsset('css/style.css') }}" rel="stylesheet">
@@ -84,6 +85,7 @@
     <!-- Bootstrap tether Core JavaScript -->
     <script src="{{ userAsset( 'plugins/popper/popper.min.js' )}}"></script>
     <script src="{{ userAsset( 'plugins/bootstrap/js/bootstrap.min.js' )}}"></script>
+    <script src="{{ userAsset( 'plugins/mdb/js/mdb.min.js' )}}"></script>
 
     <!-- slimscrollbar scrollbar JavaScript -->
     <script src="{{ userAsset( 'js/jquery.slimscroll.js' )}}"></script>

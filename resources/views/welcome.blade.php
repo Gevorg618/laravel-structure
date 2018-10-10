@@ -24,52 +24,54 @@
     <body>
     <section>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row top-content">
                 <div class="col-12 col-md-6 left-side">
                     <div>
                         <a class="navbar-brand" href="/">Samuel Gilbert</a>
                     </div>
+                    <div class="carousel-content">
+                        <div id="login-carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#login-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#login-carousel" data-slide-to="1"></li>
+                                <li data-target="#login-carousel" data-slide-to="2"></li>
+                            </ol>
 
-                    <div id="login-carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#login-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#login-carousel" data-slide-to="1"></li>
-                            <li data-target="#login-carousel" data-slide-to="2"></li>
-                        </ol>
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item text-center active">
-                                <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
-                                <div class="carousel-caption position-static">
-                                    <h5 class="carousel-header">Send Your Proposals</h5>
-                                    <p class="carousel-description">
-                                        Plese replace this text with something more relevant to your project,
-                                        I”ve put something here so it could look nice & cool once you change it, that’s perfect
-                                    </p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item text-center active">
+                                    <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
+                                    <div class="carousel-caption position-static">
+                                        <h5 class="carousel-header">Send Your Proposals</h5>
+                                        <p class="carousel-description">
+                                            Plese replace this text with something more relevant to your project,
+                                            I”ve put something here so it could look nice & cool once you change it, that’s perfect
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item text-center">
-                                <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
-                                <div class="carousel-caption position-static">
-                                    <h5 class="carousel-header">Send Your Proposals</h5>
-                                    <p class="carousel-description">
-                                        Plese replace this text with something more relevant to your project,
-                                        I”ve put something here so it could look nice & cool once you change it, that’s perfect
-                                    </p>
+                                <div class="carousel-item text-center">
+                                    <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
+                                    <div class="carousel-caption position-static">
+                                        <h5 class="carousel-header">Send Your Proposals</h5>
+                                        <p class="carousel-description">
+                                            Plese replace this text with something more relevant to your project,
+                                            I”ve put something here so it could look nice & cool once you change it, that’s perfect
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item text-center">
-                                <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
-                                <div class="carousel-caption position-static">
-                                    <h5 class="carousel-header">Send Your Proposals</h5>
-                                    <p class="carousel-description">
-                                        Plese replace this text with something more relevant to your project,
-                                        I”ve put something here so it could look nice & cool once you change it, that’s perfect
-                                    </p>
+                                <div class="carousel-item text-center">
+                                    <img class="img-fluid" src="{{ userAsset('images/strategicbd.png') }}">
+                                    <div class="carousel-caption position-static">
+                                        <h5 class="carousel-header">Send Your Proposals</h5>
+                                        <p class="carousel-description">
+                                            Plese replace this text with something more relevant to your project,
+                                            I”ve put something here so it could look nice & cool once you change it, that’s perfect
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 col-md-6 right-side">
                     <div class="btn-group-cont">
