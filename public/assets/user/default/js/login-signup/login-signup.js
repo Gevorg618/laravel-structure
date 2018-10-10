@@ -12,5 +12,8 @@ $( document ).ready(function() {
             $(".auth-form-cont form:first-child").removeClass("hide-form");
             $(".auth-form-cont form:last-child").addClass("hide-form");
         }
-    })
+    });
+    $(".alert-error").click(function () {
+        $(this).remove();
+    });
 });

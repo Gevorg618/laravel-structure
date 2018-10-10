@@ -118,6 +118,19 @@ button.blue-btn{
 .hide-form{
     display: none;
 }
+.alert-error{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 4;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 15px;
+}
+.alert-error:hover{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
 @media(min-width:1723px){
     .auth-form-cont button{
         margin-top: 150px;

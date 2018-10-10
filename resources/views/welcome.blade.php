@@ -80,6 +80,9 @@
                             <button type="button" class="btn btn-rounded blue-btn">Log in</button>
                         </div>
                     </div>
+                    <div class="alert alert-danger alert-error animated bounceInRight" role="alert">
+                        This is a danger alert—check it out!
+                    </div>
                     <div class="auth-form-cont h-100 d-flex align-items-center text-center text-md-left">
                         <form class="w-100 animated bounceInDown">
 
